@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Archivo', sans-serif;
+}
+body {
+    background-color: #baccde;
+}
+.container {
+    width: 30rem;
+    margin: 2rem auto;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 5px;
+}
+h1 {
+    text-align: center;
+    padding: 25px 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+form div {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+label {
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+input {
+    padding: 8px 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: all 0.3s;
+    text-transform: none
+}
+input::placeholder {
+    letter-spacing: 3px;
+}
+input:valid {
+    border:1px solid #008000;
+}
+input:invalid {
+    border:1px solid #c81d25;
+}
+button {
+    width: 90%;
+    margin-top: 1rem;
+    padding: 15px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+    letter-spacing: 5px;
+    border: 0;
+    border-radius: 5px;
+}
+.alert {
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.user-container {
+    width: 30rem;
+    border-radius: 15px;
+    margin: 2rem auto;
+    box-shadow: 0 0 20px 5px;
+    padding: 15px;
+    background-color: #fff;
+}
+.store {
+    margin-top: 1.5rem;
+    font-weight: bold;
+    border-bottom: 1px dashed black;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2px;
+}
+.store span:first-child{
+    width: 5rem;
+}
+.store span {
+    width: 15rem;
+}
+.store span:last-child {
+    color: #008000;
+    text-transform: none;
+}
+
+
+@media screen and (max-width: 750px) {
+    .container {
+        width: 25rem;
+    }
+    .user-container {
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .container {
+        width: 20rem;
+    }
+    .user-container {
+        width: 20rem;
+    }
+    .store span {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+    .user-container {
+        width: 90%;
+    }
+    .store span:last-child {
+        width: 10rem;
+    }
+    .store span {
+        font-size: 0.7rem;
+    }
+
+}
